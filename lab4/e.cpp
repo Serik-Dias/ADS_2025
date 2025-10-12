@@ -29,9 +29,8 @@ int main() {
         else nodes[parent]->right = nodes[child];
     }
 
-    // BFS to calculate width
     queue<Node*> q;
-    q.push(nodes[1]); // root is always 1
+    q.push(nodes[1]);
     int maxWidth = 0;
 
     while (!q.empty()) {
